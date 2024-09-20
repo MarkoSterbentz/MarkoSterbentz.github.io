@@ -49,22 +49,22 @@ interests:
 education:
   - area: PhD Computer Science
     institution: Northwestern University
-    date_start: 2019
+    date_start: 2019-09-01
     date_end: ''
   - area: MS Computer Science
     institution: University of Southern California
-    date_start: 2017
-    date_end: 2019
+    date_start: 2017-08-01
+    date_end: 2019-05-01
   - area: BS Computer Science
     institution: Idaho State University
-    date_start: 2013
-    date_end: 2017
+    date_start: 2013-08-01
+    date_end: 2017-05-01
 work:
   - position: Research Assistant
     company_name: Northwestern University
     company_url: ''
     company_logo: ''
-    date_start: 2019
+    date_start: 2019-09-01
     date_end: ''
   - position: Research Intern
     company_name: Lawrence Livermore National Laboratory

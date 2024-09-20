@@ -12,10 +12,10 @@ date: '2024-01-01'
 publishDate: '2024-09-20T20:04:44.745876Z'
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 publication: To appear at *EMNLP 2024 (Main)*
-publication_short: In *EMNLP 2024*
+publication_short: To appear at *EMNLP 2024 (Main)*
 
 publication_types:
 - manuscript

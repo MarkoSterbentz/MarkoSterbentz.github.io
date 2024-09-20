@@ -50,7 +50,7 @@ education:
   - area: PhD Computer Science
     institution: Northwestern University
     date_start: 2019-09-01
-    date_end: ''
+    date_end: present
   - area: MS Computer Science
     institution: University of Southern California
     date_start: 2017-08-01
@@ -65,7 +65,7 @@ work:
     company_url: ''
     company_logo: ''
     date_start: 2019-09-01
-    date_end: ''
+    date_end: present
   - position: Research Intern
     company_name: Lawrence Livermore National Laboratory
     company_url: ''

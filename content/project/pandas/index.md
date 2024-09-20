@@ -1,13 +1,11 @@
 ---
-title: Pandas
-date: 2023-10-26
-external_link: https://github.com/pandas-dev/pandas
+title: Satyrn
+date: 2024-06-17
+external_link: https://github.com/nu-c3lab/satyrn
 tags:
-  - Hugo
-  - Wowchemy
-  - Markdown
+  - Python
 ---
 
-Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.
+A data platform that uses analytics augmented generation to write comprehensive reports grounded by your data.
 
 <!--more-->

@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Artificial Intelligence PhD Candidate
+role: Computer Science PhD Candidate
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -113,9 +113,9 @@ work:
 #         percent: 80
 #         icon: camera
 
-languages:
-  - name: English
-    percent: 100
+# languages:
+#   - name: English
+#     percent: 100
 
 # Awards.
 #   Add/remove as many awards below as you like.

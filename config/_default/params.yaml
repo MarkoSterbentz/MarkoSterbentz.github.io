@@ -5,8 +5,8 @@
 
 # Appearance
 appearance:
-  mode: system
-  color: emerald
+  mode: light
+  color: indigo  # emerald
 
 # SEO
 marketing:
@@ -32,10 +32,11 @@ header:
     enable: true
     blox: "navbar"
     fixed_to_top: true
-    show_search: true
-    show_theme_chooser: true
+    show_search: false
+    show_theme_chooser: false
     logo:
-      text: "Your Name"
+      text: "Marko Sterbentz"
+    align: "right"
 
 # Site footer
 footer:

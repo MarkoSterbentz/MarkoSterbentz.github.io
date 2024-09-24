@@ -6,7 +6,7 @@ type: landing
 
 design:
   # Default section spacing
-  spacing: "6rem"
+  spacing: "1rem"
 
 sections:
   - block: resume-biography-3
@@ -19,23 +19,36 @@ sections:
         text: Download CV
         url: uploads/resume.pdf
     design:
-      css_class: dark
+      css_class: light
       background:
-        color: black
-        image:
-          # Add your image background to `assets/media/`.
-          filename: stacked-peaks.svg
-          filters:
-            brightness: 1.0
-          size: cover
-          position: center
-          parallax: false
+        color: '#f5f5f5'
+        # image:
+        #   # Add your image background to `assets/media/`.
+        #   filename: stacked-peaks.svg
+        #   filters:
+        #     brightness: 1.0
+        #   size: cover
+        #   position: center
+        #   parallax: false
+  # - block: markdown
+  #   content:
+  #     title: '📚 My Research'
+  #     subtitle: ''
+  #     text: |-
+  #       Placeholder text.
+  #   design:
+  #     columns: '1'
   - block: markdown
+    id: news
     content:
-      title: '📚 My Research'
+      title: 'News'
       subtitle: ''
       text: |-
-        Placeholder text.
+        - **September 2024:** Our paper [Satyrn: A Platform for Analytics Augmented Generation](https://arxiv.org/abs/2406.12069) was just accepted to [EMNLP 2024](https://2024.emnlp.org/). See you in Miami!
+        - **June 2024**: I partcipated in the CASMI workshop "AI Safety: A Domain-Focused Approach to Anticipating Harm". [Read the full report](https://casmi.northwestern.edu/documents/ai-safety-a-domain-focused-approach-to-anticipating-harm.pdf).
+        - **July 2023**: I participated in the CASMI workshop on "[Sociotechnical Approaches to Measurement and Validation for Safety in AI](https://casmi.northwestern.edu/news/articles/2023/measuring-safety-in-artificial-intelligence-positionality-matters.html)"
+        - **June 2023**: Attended [FAccT 2023](https://facctconference.org/2023/)! Here's an [article which includes some of my and my colleagues' thoughts](https://casmi.northwestern.edu/news/articles/2023/ai-ethics-debate-at-chicago-conference,-precursor-to-casmis-next-workshop.html).
+        - **June 2023**: Cameron Barrie and I gave a demonstration of our research at the "Exploring Opportunities at the Intersection of Healthcare and AI" event. [Read more here](https://ai.northwestern.edu/news-events/articles/2023/using-ai-chatgpt-to-augment-the-future-of-healthcare.html)!
     design:
       columns: '1'
   # - block: collection
@@ -50,54 +63,112 @@ sections:
   #     view: article-grid
   #     columns: 2
   - block: collection
+    id: papers
     content:
-      title: Recent Publications
-      text: ""
+      title: Publications
       filters:
         folders:
           - publication
-        exclude_featured: false
     design:
       view: citation
-  - block: collection
-    id: talks
+      background:
+        color: '#f5f5f5'
+
+  # - block: markdown
+  #   id: experience
+  #   content:
+  #     title: Experience
+  #     spacing: 1rem
+  #     text: |
+  #       <div class="experience-section" style="font-family: Arial, sans-serif; margin: 20px auto; width: 90%; min-width: 400px;">
+  #           <div class="job" style="margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #ddd;">
+  #               <h3 style="font-size: 1.4em; margin-bottom: 5px;">Research Assistant</h3>
+  #               <span style="display: block; font-size: 1.1em; margin-bottom: 5px;">Northwestern University</span>
+  #               <span style="font-size: 0.9em; color: #555;">January 2019 - Present</span>
+  #           </div>
+  #           <div class="job" style="margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #ddd;">
+  #               <h3 style="font-size: 1.4em; margin-bottom: 5px;">Research Intern</h3>
+  #               <span style="display: block; font-size: 1.1em; margin-bottom: 5px;">Lawrence Livermore National Laboratory</span>
+  #               <span style="font-size: 0.9em; color: #555;">June 2020 - December 2021</span>
+  #           </div>
+  #           <div class="job" style="margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #ddd;">
+  #               <h3 style="font-size: 1.4em; margin-bottom: 5px;">Research Intern</h3>
+  #               <span style="display: block; font-size: 1.1em; margin-bottom: 5px;">Idaho National Laboratory</span>
+  #               <span style="font-size: 0.9em; color: #555;">January 2020 - May 2020</span>
+  #               <p style="margin-top: 10px; line-height: 1.5;"></p>
+  #           </div>
+  #       </div>
+  - block: resume-experience
+    id: experience
     content:
-      title: Recent & Upcoming Talks
+      username: admin
+    design:
+      date_format: 'January 2006'
+      show_education: false
+  - block: collection
+    id: projects
+    content:
+      title: Projects
+      text: ""
       filters:
         folders:
-          - event
+          - project
+        # exclude_featured: false
     design:
       view: article-grid
-      columns: 1
+      columns: 3
+      color: '#f5f5f5'
   - block: collection
-    id: news
+    id: teaching
     content:
-      title: Recent News
-      subtitle: ''
-      text: ''
-      # Page type to display. E.g. post, talk, publication...
-      page_type: post
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 5
-      # Filter on criteria
+      title: Teaching
+      text: ""
       filters:
-        author: ""
-        category: ""
-        tag: ""
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ""
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
+        folders:
+          - teaching
+        # exclude_featured: false
     design:
-      # Choose a layout view
-      view: date-title-summary
-      # Reduce spacing
-      spacing:
-        padding: [0, 0, 0, 0]
+      view: article-grid
+      columns: 2
+  # - block: collection
+  #   id: talks
+  #   content:
+  #     title: Recent & Upcoming Talks
+  #     filters:
+  #       folders:
+  #         - event
+  #   design:
+  #     view: article-grid
+  #     columns: 1
+  # - block: collection
+  #   id: news
+  #   content:
+  #     title: Recent News
+  #     subtitle: ''
+  #     text: ''
+  #     # Page type to display. E.g. post, talk, publication...
+  #     page_type: post
+  #     # Choose how many pages you would like to display (0 = all pages)
+  #     count: 5
+  #     # Filter on criteria
+  #     filters:
+  #       author: ""
+  #       category: ""
+  #       tag: ""
+  #       exclude_featured: false
+  #       exclude_future: false
+  #       exclude_past: false
+  #       publication_type: ""
+  #     # Choose how many pages you would like to offset by
+  #     offset: 0
+  #     # Page order: descending (desc) or ascending (asc) date.
+  #     order: desc
+  #   design:
+  #     # Choose a layout view
+  #     view: date-title-summary
+  #     # Reduce spacing
+  #     spacing:
+  #       padding: [0, 0, 0, 0]
   - block: cta-card
     demo: true # Only display this section in the Hugo Blox Builder demo site
     content:

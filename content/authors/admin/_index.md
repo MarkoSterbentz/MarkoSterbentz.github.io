@@ -133,4 +133,11 @@ work:
 
 ## About Me
 
-I am a computer science PhD candidate at Northwestern University in the C3 Lab advised by Kristian Hammond. My research is focuses on using AI and LLMs to automate data science processes so that people can ask questions of their data and receive meaningful insights in return.
+I am a computer science PhD candidate at Northwestern University in the C3 Lab advised by Kristian Hammond. My research focuses on leveraging AI and large language models (LLMs) to automate data science processes, enabling users to ask questions of their data and receive meaningful, contextualized insights.
+
+Specifically, this involves:
+* Modeling and representing data science knowledge so that the system understands the range of actions it can take to perform data analytics.
+* Building mechanisms and tools for extracting information from databases, which includes training and developing text-to-query models capable of answering atomic questions.
+* Developing reasoning and planning methods that utilize the available data analytics knowledge and tools to provide contextualized answers to users’ inquiries.
+
+
